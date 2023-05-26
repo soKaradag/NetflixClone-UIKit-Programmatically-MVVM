@@ -7,6 +7,14 @@
 
 import Foundation
 
+enum Sections: Int {
+    case TrendingMovies = 0
+    case TrendingTv = 1
+    case Popular = 2
+    case Upcoming = 3
+    case TopRated = 4
+}
+
 struct Constants {
     static let API_KEY = "8545e309c25a053623734a7c512cc8dd"
     static let baseURL = "https://api.themoviedb.org"
@@ -46,8 +54,8 @@ class APICaller {
             }
             
             do {
-                let result = try JSONDecoder().decode(TrendingTitleResponse.self, from: data)
-                print(result)
+                let results = try JSONDecoder().decode(TrendingTitleResponse.self, from: data)
+                completion(.success(results.results))
             } catch {
                 completion(.failure(APIError.failedTogetData))
             }
