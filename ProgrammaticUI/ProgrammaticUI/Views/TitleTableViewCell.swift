@@ -15,7 +15,7 @@ class TitleTableViewCell: UITableViewCell {
         let image = UIImage(systemName: "play.circle", withConfiguration: UIImage.SymbolConfiguration(pointSize: 30))
         button.setImage(image, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.tintColor = .white
+        button.tintColor = .label
         return button
     }()
     
@@ -47,7 +47,7 @@ class TitleTableViewCell: UITableViewCell {
         let titlePostImageViewConstraints = [
             titlePosterUIImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             titlePosterUIImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
-            titlePosterUIImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -15),
+            titlePosterUIImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10),
             titlePosterUIImageView.widthAnchor.constraint(equalToConstant: 100)
         ]
         

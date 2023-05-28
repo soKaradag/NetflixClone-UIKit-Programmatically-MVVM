@@ -41,7 +41,7 @@ class HeroHeaderUIView: UIView {
         let gradiantLayer = CAGradientLayer()
         gradiantLayer.colors = [
             UIColor.clear.cgColor,
-            UIColor.systemBackground.cgColor
+            UIColor.black.cgColor
         ]
         gradiantLayer.frame = bounds
         layer.addSublayer(gradiantLayer)

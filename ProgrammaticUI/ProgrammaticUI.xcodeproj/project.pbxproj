@@ -19,6 +19,7 @@
 		751FDCA62A1EBE0500CADCB5 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751FDCA52A1EBE0500CADCB5 /* CollectionViewTableViewCell.swift */; };
 		75725E1B2A22514A00A3D0CE /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75725E1A2A22514A00A3D0CE /* TitleTableViewCell.swift */; };
 		75725E1D2A225A3600A3D0CE /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75725E1C2A225A3600A3D0CE /* TitleViewModel.swift */; };
+		759F021C2A23953F00EFFD5B /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759F021B2A23953F00EFFD5B /* SearchResultsViewController.swift */; };
 		75A8668C2A20EEA8007646BE /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A8668B2A20EEA8007646BE /* APICaller.swift */; };
 		75A8668E2A21026C007646BE /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A8668D2A21026C007646BE /* Movie.swift */; };
 		75A866902A210B72007646BE /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A8668F2A210B72007646BE /* Extentions.swift */; };
@@ -43,6 +44,7 @@
 		751FDCA52A1EBE0500CADCB5 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 		75725E1A2A22514A00A3D0CE /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		75725E1C2A225A3600A3D0CE /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
+		759F021B2A23953F00EFFD5B /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		75A8668B2A20EEA8007646BE /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		75A8668D2A21026C007646BE /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		75A8668F2A210B72007646BE /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
@@ -84,7 +86,6 @@
 			children = (
 				751FDC832A1EA23400CADCB5 /* AppDelegate.swift */,
 				751FDC852A1EA23400CADCB5 /* SceneDelegate.swift */,
-				751FDC872A1EA23400CADCB5 /* MainTabBarViewController.swift */,
 				751FDCA32A1EBDAE00CADCB5 /* Resources */,
 				751FDCA42A1EBDBE00CADCB5 /* Managers */,
 				751FDCA22A1EBD6C00CADCB5 /* Models */,
@@ -101,10 +102,8 @@
 		751FDC972A1EA4EE00CADCB5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				751FDC982A1EA50200CADCB5 /* HomeViewController.swift */,
-				751FDC9A2A1EA54D00CADCB5 /* UpcomingViewController.swift */,
-				751FDC9C2A1EA6BE00CADCB5 /* SearchViewController.swift */,
-				751FDC9E2A1EA6CE00CADCB5 /* DownloadsViewController.swift */,
+				759F021E2A23959A00EFFD5B /* General */,
+				759F021D2A23958300EFFD5B /* Core */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -150,6 +149,26 @@
 				75A8668B2A20EEA8007646BE /* APICaller.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		759F021D2A23958300EFFD5B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				751FDC982A1EA50200CADCB5 /* HomeViewController.swift */,
+				751FDC9A2A1EA54D00CADCB5 /* UpcomingViewController.swift */,
+				751FDC9C2A1EA6BE00CADCB5 /* SearchViewController.swift */,
+				751FDC9E2A1EA6CE00CADCB5 /* DownloadsViewController.swift */,
+				751FDC872A1EA23400CADCB5 /* MainTabBarViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		759F021E2A23959A00EFFD5B /* General */ = {
+			isa = PBXGroup;
+			children = (
+				759F021B2A23953F00EFFD5B /* SearchResultsViewController.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +257,7 @@
 				75F575792A1FCACA00F47721 /* HeroHeaderUIView.swift in Sources */,
 				751FDC9F2A1EA6CE00CADCB5 /* DownloadsViewController.swift in Sources */,
 				751FDC842A1EA23400CADCB5 /* AppDelegate.swift in Sources */,
+				759F021C2A23953F00EFFD5B /* SearchResultsViewController.swift in Sources */,
 				751FDC862A1EA23400CADCB5 /* SceneDelegate.swift in Sources */,
 				75A866902A210B72007646BE /* Extentions.swift in Sources */,
 				751FDC992A1EA50200CADCB5 /* HomeViewController.swift in Sources */,
