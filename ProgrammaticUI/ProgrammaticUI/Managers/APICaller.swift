@@ -16,7 +16,7 @@ enum Sections: Int {
 }
 
 struct Constants {
-    static let API_KEY = "8545e309c25a053623734a7c512cc8dd"
+    static let API_KEY = "//ADD YOUR API KEY"
     static let baseURL = "https://api.themoviedb.org"
 }
 
