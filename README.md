@@ -1,2 +1,2 @@
 # NetflixClone-UIKit-Programmatically
-This project is still under development
+Use your own API_KEY for fetch data.
